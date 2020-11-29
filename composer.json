@@ -1,35 +1,29 @@
 {
-    "name": "koala-framework/composer-extra-assets",
-    "description": "Composer Plugin for installing Assets using native npm/bower",
-    "homepage": "https://github.com/koala-framework/composer-extra-assets",
+    "name": "icecube/composer-npm",
+    "description": "Composer Plugin for installing NPM packages from a composer.json",
+    "homepage": "https://github.com/icecubenz-open-mage/composer-npm",
     "license": "BSD-2-Clause",
     "type": "composer-plugin",
     "require": {
-        "composer-plugin-api": "^2.0",
-        "mouf/nodejs-installer": ">=1.0.2 <2.0"
+        "composer-plugin-api": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "4.5.*"
     },
     "extra": {
-        "class": "Kwf\\ComposerExtraAssets\\Plugin",
-        "mouf": {
-            "nodejs": {
-                "version": ">=0.10"
-            }
-        },
+        "class": "Icecube\\ComposerNpm\\Plugin",
         "branch-alias": {
-            "dev-master": "1.1-dev"
+            "dev-master": "3.0-dev"
         }
     },
     "autoload": {
         "psr-4": {
-            "Kwf\\ComposerExtraAssets\\": "Kwf/ComposerExtraAssets"
+            "Icecube\\ComposerNpm\\": "Icecube/ComposerNpm"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kwf\\ComposerExtraAssets\\": "tests/"
+            "Icecube\\ComposerNpm\\": "tests/"
         }
     },
     "minimum-stability": "dev",

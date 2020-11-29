@@ -1,5 +1,5 @@
 <?php
-namespace Kwf\ComposerExtraAssets;
+namespace Icecube\ComposerNpm;
 
 class VersionMatcherTest extends \PHPUnit_Framework_TestCase
 {
